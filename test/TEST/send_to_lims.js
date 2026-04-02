@@ -3,7 +3,7 @@ const axios = require("axios");
 
 async function sendToLims(url, headers, payload) {
   try {
-    console.log(" Sending payload to LIMS");
+    console.log("➡️ Sending payload to LIMS");
 
     const response = await axios.post(url, payload, { headers });
 
