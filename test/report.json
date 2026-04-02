@@ -1,0 +1,10 @@
+{
+  "order_id": "ORD_9123",
+  "status": "completed",
+  "amount": 1535,
+  "currency": "INR",
+  "customer": {
+    "name": "Kiran",
+    "email": "kiran@example.com"
+  }
+}
