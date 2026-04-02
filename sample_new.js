@@ -33,7 +33,7 @@ let pool;
 async function getDbPool() {
   if (pool) return pool;
   pool = await sql.connect(dbConfig);
-  console.log("✅ SQL Server connected");
+  console.log("SQL Server connected");
   return pool;
 }
 

@@ -92,7 +92,7 @@ async function insertVisitDetails(limsResponse) {
   const Status = data.Status || "N";
   const VisitCategory = data.VisitCategory || null;
 
-  // ✅ FIXED REGISTEREDBY
+  //  FIXED REGISTEREDBY
   //const RegisteredBy =
     //typeof data.RegisteredBy === "string" && data.RegisteredBy.trim().length > 0
       //? data.RegisteredBy.trim().substring(0, 50)
