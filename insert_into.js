@@ -17,10 +17,10 @@ const dbConfig = {
 async function checkDbConnection() {
   try {
     const pool = await sql.connect(dbConfig);
-    console.log("✅ SQL Server connected");
+    console.log(" SQL Server connected");
     return pool;
   } catch (err) {
-    console.error("❌ DB connection failed:", err.message);
+    console.error(" DB connection failed:", err.message);
     return null;
   }
 }
