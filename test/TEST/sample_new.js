@@ -33,7 +33,7 @@ let pool;
 async function getDbPool() {
   if (pool) return pool;
   pool = await sql.connect(dbConfig);
-  console.log("SQL Server connected");
+  console.log("✅ SQL Server connected");
   return pool;
 }
 
@@ -53,7 +53,7 @@ async function sendToLims(url, headers, payload) {
 }
 
 /* =====================================================
-   INSERT INTO SAMPLE TABLE (SAFE)fgh
+   INSERT INTO SAMPLE TABLE (SAFE)
 ===================================================== */
 async function insertSample(limsResponse) {
   const pool = await getDbPool();
