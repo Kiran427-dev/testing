@@ -53,7 +53,7 @@ async function sendToLims(url, headers, payload) {
 }
 
 /* =====================================================
-   INSERT INTO SAMPLE TABLE (SAFE)
+   INSERT INTO SAMPLE TABLE (SAFE)fgh
 ===================================================== */
 async function insertSample(limsResponse) {
   const pool = await getDbPool();
