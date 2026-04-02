@@ -31,7 +31,7 @@ async function main() {
   if (!pool) return;
 
   try {
-    console.log("🚀 Starting insert...");
+    console.log(" Starting insert...");
     await insertAndVerify(pool, payload);
   } catch (err) {
     console.error(err);
