@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "40ab1957-17b9-416b-96b4-4f21b963ef10",
+		"name": "HealthUmberalla",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19673321"
+	},
+	"item": [
+		{
+			"name": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/SaveThirdPartyVisitDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "companyid",
+						"value": "HealthUmberalla"
+					},
+					{
+						"key": "UserId",
+						"value": "10"
+					},
+					{
+						"key": "password",
+						"value": "H-+2cq$C=:T4-["
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"IntegrationVisitOrderId\": \"Testing-226_3\",\r\n        \"BranchId\": \"199\",\r\n        \"B2BId\": \"10209\",\r\n        \"CityId\": \"16547\",\r\n        \"AreaId\": \"2132\",\r\n        \"Pincode\": \"600004\",\r\n        \"Status\": \"W\",\r\n        \"MobileNo\": \"9449866272\",\r\n        \"VisitBookedBy\": \"Test\",\r\n        \"RegistrationDate\": \"2025-12-10\",\r\n        \"Address\": \"560076\",\r\n        \"CollectionDateTime\": \"2025-12-10 14:30\",\r\n        \"OtherVisitDateTime1\": \"\",\r\n        \"VisitCategory\": \"W\",\r\n        \"Remarks\": \"Test\",\r\n        \"VisitPatientDetails\": [\r\n            {\r\n                \"IntegrationPatientId\": \"TEST-7_3\",\r\n                \"TitleId\": \"Mr\",\r\n                \"TitleName\": \"Mr\",\r\n                \"FirstName\": \"Test\",\r\n                \"MiddleName\": \"\",\r\n                \"LastName\": \"Test\",\r\n                \"Gender\": \"male\",\r\n                \"AgeYYY\": \"26\",\r\n                \"AgeMM\": \"0\",\r\n                \"AgeDD\": \"0\",\r\n                \"Mobile\": \"9449866272\",\r\n                \"RefId1\": \"Test201\",\r\n                \"EmailId\": \"govindaraj.v@neubergdiagnostics.com\",\r\n                \"CityId\": \"16547\",\r\n                \"AreaId\": \"2132\",\r\n                \"Pincode\": \"600041\",\r\n                \"Remarks\": \"Testing\",\r\n                \"VisitServiceDetails\": [\r\n                    {\r\n                        \"ServiceId\": \"288\"\r\n                    },\r\n                    {\r\n                        \"ServiceId\": \"299\"\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"ReasonForChange\": \"\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/SaveThirdPartyVisitDetails",
+					"protocol": "https",
+					"host": [
+						"adminportal",
+						"neubergdiagnostics",
+						"com"
+					],
+					"port": "2087",
+					"path": [
+						"commonmiddlware",
+						"SaveThirdPartyVisitDetails"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/SaveThirdPartyVisitDetails' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'companyid:HealthUmberalla' \\\r\n--header 'UserId: 10' \\\r\n--header 'password: H-+2cq$C=:T4-[' \\\r\n--data-raw ' {\r\n        \"IntegrationVisitOrderId\": \"Testing-226_2\",\r\n        \"BranchId\": \"272\",\r\n        \"B2BId\": \"10209\",\r\n        \"CityId\": \"16547\",\r\n        \"AreaId\": \"2132\",\r\n        \"Pincode\": \"600004\",\r\n        \"Status\": \"W\",\r\n        \"MobileNo\": \"9449866272\",\r\n        \"VisitBookedBy\": \"Test\",\r\n        \"RegistrationDate\": \"2025-12-09\",\r\n        \"Address\": \"560076\",\r\n        \"CollectionDateTime\": \"2025-12-10 11:30\",\r\n        \"OtherVisitDateTime1\": \"\",\r\n        \"VisitCategory\": \"W\",\r\n        \"Remarks\": \"Test\",\r\n        \"VisitPatientDetails\": [\r\n            {\r\n                \"IntegrationPatientId\": \"TEST-7_2\",\r\n                \"TitleId\": \"Mr\",\r\n                \"TitleName\": \"Mr\",\r\n                \"FirstName\": \"Test\",\r\n                \"MiddleName\": \"\",\r\n                \"LastName\": \"Test\",\r\n                \"Gender\": \"male\",\r\n                \"AgeYYY\": \"26\",\r\n                \"AgeMM\": \"0\",\r\n                \"AgeDD\": \"0\",\r\n                \"Mobile\": \"9449866272\",\r\n                \"RefId1\": \"Test201\",\r\n                \"EmailId\": \"govindaraj.v@neubergdiagnostics.com\",\r\n                \"CityId\": \"16547\",\r\n                \"AreaId\": \"2132\",\r\n                \"Pincode\": \"560076\",\r\n                \"Remarks\": \"Testing\",\r\n                \"VisitServiceDetails\": [\r\n                    {\r\n                        \"ServiceId\": \"288\"\r\n                    },\r\n                    {\r\n                        \"ServiceId\": \"299\"\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"ReasonForChange\": \"\"\r\n    }\r\n\r\n‘\r\n———————————————————————————————————\r\nGetBranchdetails by Pincode\r\n\r\n\r\ncurl --location 'https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetBranchDetailsByPincode' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'companyid: BalAyush' \\\r\n--header 'UserId: 7' \\\r\n--header 'password: Ndpl@2025$' \\\r\n--data '{\r\n\r\n        \"Limsid\": 8,\r\n        \"input\": {\r\n            \"Pincode\": 560076,\r\n            \"isHomecollection\": 1\r\n        }\r\n    \r\n}'\r\n\r\n\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetBranchDetailsByPincode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "companyid",
+						"value": "HealthUmberalla"
+					},
+					{
+						"key": "UserId",
+						"value": "10"
+					},
+					{
+						"key": "password",
+						"value": "H-+2cq$C=:T4-["
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"Limsid\": 8,\r\n        \"input\": {\r\n            \"Pincode\": 600004,\r\n            \"isHomecollection\": 1\r\n        }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetBranchDetailsByPincode",
+					"protocol": "https",
+					"host": [
+						"adminportal",
+						"neubergdiagnostics",
+						"com"
+					],
+					"port": "2087",
+					"path": [
+						"commonmiddlware",
+						"GetBranchDetailsByPincode"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetBranchDetailsByPincode' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'companyid: HealthUmberalla' \\\r\n--header 'UserId: 10' \\\r\n--header 'password: H-+2cq$C=:T4-[' \\\r\n--data '{\r\n\r\n        \"Limsid\": 8,\r\n        \"input\": {\r\n            \"Pincode\": 560076,\r\n            \"isHomecollection\": 1\r\n        }\r\n    \r\n}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetThirdPartyTimeSlotList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "companyid",
+						"value": "HealthUmberalla"
+					},
+					{
+						"key": "userid",
+						"value": "10"
+					},
+					{
+						"key": "password",
+						"value": "H-+2cq$C=:T4-["
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n        \"B2BId\": 10209,\r\n        \"AreaId\": 949,\r\n        \"BranchId\": 199,\r\n        \"CollectionDateTime\": \"2025-12-10T11:30:00.000\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetThirdPartyTimeSlotList",
+					"protocol": "https",
+					"host": [
+						"adminportal",
+						"neubergdiagnostics",
+						"com"
+					],
+					"port": "2087",
+					"path": [
+						"commonmiddlware",
+						"GetThirdPartyTimeSlotList"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://adminportal.neubergdiagnostics.com:2087/commonmiddlware/GetThirdPartyTimeSlotList' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'companyid: HealthUmberalla' \\\r\n--header 'userid: 10' \\\r\n--header 'password: H-+2cq$C=:T4-[' \\\r\n--data ' \r\n\r\n{\r\n        \"B2BId\": 10209,\r\n        \"AreaId\": 2132,\r\n        \"BranchId\": 272,\r\n        \"CollectionDateTime\": \"2025-12-10T11:30:00.000\"\r\n    }\r\n"
+			},
+			"response": []
+		}
+	]
+}
